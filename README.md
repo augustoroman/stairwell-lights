@@ -89,8 +89,8 @@ Some custom manufactured items:
 Those are the core of the whole setup, but there's lots of additional things I
 needed to actually complete the setup:
 
-* **Colorful headers** [[Adafruit](https://www.adafruit.com/product/4160)] <br> I
-  used these nice colorful headers so it's obvious which way to connect the
+* **Colorful headers** [[Adafruit](https://www.adafruit.com/product/4160)] <br>
+  I used these nice colorful headers so it's obvious which way to connect the
   strips since I used plain headers instead of polarized connectors. Probably I
   should have used polarized connectors, but that would probably require a PCB
   change.
@@ -100,9 +100,12 @@ needed to actually complete the setup:
   <br> I originally tried soldering wires to the LED strips, but changed from
   the small-gauge hookup wire to the thicker 20-gauge wire and used these
   connectors instead. I glue-gunned the connector to the bottom of the railing.
-* A **5V DC power supply**. I'm currently using [a generic
-  supply](https://www.amazon.com/gp/product/B078LSVVTB) for development, but I
-  intend to measure the actual power usage and get a dedicated supply.
+* A **5V DC power supply**. The current software draws 0.25A idle and 0.5A
+  maximum current draw from the power supply (2.5W max), so this [5W power
+  supply](https://smile.amazon.com/dp/B08Q38QMFD) or this [10W power
+  supply](https://smile.amazon.com/dp/B0863J9RLW) should work fine and provide
+  plenty of buffer.  I'm currently using [a generic
+  supply](https://www.amazon.com/gp/product/B078LSVVTB) for development.
 * **20 AWG solid-core hookup wire** to connect the LEDs
   [[Amazon](https://www.amazon.com/gp/product/B083DNGSPV)] <br> The LEDs can use
   a surprising amount of power (up to 90W for the whole strip!!), and really
@@ -156,4 +159,3 @@ needed to actually complete the setup:
 - [ ] Maybe add a middle motion sensor that looks at the landing. Right now the
   landing is not visible from either the upper or lower sensors, but it's not a
   problem.
-  
